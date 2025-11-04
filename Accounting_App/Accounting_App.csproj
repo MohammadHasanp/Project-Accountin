@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{020E5D6B-CACD-4324-ACB1-038AECCA5B5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Accounting_App</RootNamespace>
+    <AssemblyName>Accounting_App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Accounting.DataLAyer\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Accounting.DataLAyer\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accountiing\FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountiing\FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Add or edit customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\Add or edit customer.Designer.cs">
+      <DependentUpon>Add or edit customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerChange.Designer.cs">
+      <DependentUpon>CustomerChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accountiing\NewTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accountiing\NewTransaction.Designer.cs">
+      <DependentUpon>NewTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accountiing\FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\Add or edit customer.resx">
+      <DependentUpon>Add or edit customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\CustomerChange.resx">
+      <DependentUpon>CustomerChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accountiing\NewTransaction.resx">
+      <DependentUpon>NewTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Business\Accounting.Business.csproj">
+      <Project>{1ea0f3be-a803-40f9-9f96-d2feba60d217}</Project>
+      <Name>Accounting.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accounting.DataLAyer\Accounting.DataLAyer.csproj">
+      <Project>{3d238272-b1fd-4ab8-a8bf-e979a8848807}</Project>
+      <Name>Accounting.DataLAyer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accounting.Utility\Accounting.Utility.csproj">
+      <Project>{f6d9d52e-42fc-4477-a50d-f69da1581884}</Project>
+      <Name>Accounting.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accounting.ViewModel\Accounting.ViewModel.csproj">
+      <Project>{ee2d02be-4bb4-4ed8-9554-4fbdfc7e9102}</Project>
+      <Name>Accounting.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1370791030_credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371475930_filenew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371475973_document_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476007_Close_Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476049_fork3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476070_self1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476120_fingerprint_reader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476143_deliverables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476193_printers-&amp;-Faxes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476276_Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476342_Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476368_Synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476394_refresh red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476468_preferences-contact-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371476499_todo-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-profile-image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicesCosts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
