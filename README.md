@@ -5,6 +5,7 @@
 [![WinForms](https://img.shields.io/badge/UI-Windows%20Forms-0078D6?logo=windows&logoColor=white)](https://learn.microsoft.com/dotnet/desktop/winforms/)
 [![Entity Framework](https://img.shields.io/badge/ORM-Entity%20Framework%206-68217A)](https://learn.microsoft.com/ef/ef6/)
 [![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A desktop **accounting management application** built with **C# / Windows Forms** on top of a clean **multi-layer architecture**. It lets you manage customers, register payment and receipt transactions, and view monthly financial reports — with full support for the **Persian (Shamsi) calendar**.
 
@@ -21,6 +22,7 @@ A desktop **accounting management application** built with **C# / Windows Forms*
 - [How It Works](#-how-it-works)
 - [Design Patterns Used](#-design-patterns-used)
 - [Contributing](#-contributing)
+- [License](#-license)
 - [Author](#-author)
 
 ---
@@ -169,6 +171,12 @@ Contributions are welcome! Feel free to:
 3. Commit your changes (`git commit -m "Add amazing feature"`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
